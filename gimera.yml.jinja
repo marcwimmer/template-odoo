@@ -1,0 +1,33 @@
+repos:
+- branch: '{{version}}'
+  patches:
+  - odoo.patches
+  path: odoo
+  type: integrated
+  url: https://github.com/odoo/odoo
+- branch: '{{version}}'
+  patches:
+  - addons_OCA/queue.patches
+  path: addons_OCA/queue
+  sha: 4d1e8fa2fede78ba41bdc930d0491286bdf2c5a7
+  type: integrated
+  url: https://github.com/OCA/queue
+- branch: '{{version}}'
+  patches:
+  - patches/oca_social
+  path: addons_OCA/social
+  type: integrated
+  url: https://github.com/OCA/social
+- branch: '{{version}}'
+  patches:
+  - patches/oca_web
+  path: addons_OCA/web
+  sha: e2f1ad592d1f5ab673a76bfb414b2b6f3d03b391
+  type: integrated
+  url: https://github.com/OCA/web
+- branch: '{{version}}'
+  patches:
+  - patches/oca_partner-contact
+  path: addons_OCA/partner-contact
+  type: integrated
+  url: https://github.com/OCA/partner-contact
